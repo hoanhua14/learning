@@ -1,0 +1,23 @@
+<!-- Build a form in HTML that takes in a person’s name, phone number, a message up to 500 characters, and an uploaded file. Paste the code in here. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="phonenumber">Phone number:</label><br>
+        <input type="text" id="phonenumber" name="phonenumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="012-345-6789"><br>
+        <label for="message">Message (max length 500 characters):</label><br>
+        <input type="text" id="message" name="message" maxlength="500" ><br>
+        <label for="file">Upload a file:</label><br>
+        <input type="file" id="file" name="file"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
