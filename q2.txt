@@ -1,0 +1,12 @@
+What is the difference between `any`, `unknown`, and `never` types in typescript?
+*
+- Any: basically disable type checking and allow the variable to be assigned to any value without type restriction. Since "any" voids type checking, it's not encouraged to use this too often. A use case such as transferring a project from JavaScript to TypeScript, using "any" allows the initial transfer to be smoother and we can slowly go back into the code to assign types later.
+Example: let pass: any = 123;
+pass = 'password';
+- unknown: a safer alternate of "any", the type of value is unknown at the compile time but type check is done before methods can be used on that value.
+Example: let var: unknown = 1;
+if (typeof var === 'number') var++;
+if (typeof var === 'string') var.toUpperCase();
+- never: an empty set, no possible value can be assigned, typically used for functions that never return or always throws errors.
+Example: A will have the type of never in this case
+type A = boolean & null;
