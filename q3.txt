@@ -1,0 +1,7 @@
+What is typecasting and when should you use it?
+Typecasting is a feature in TypeScript to convert a value from one data type to another, allowing automatic implicit conversion by the language itself or explicitly by the developer's intention.
+Some typecasting might not work on React files such as let x: unknown = 'hello';
+console.log((<string>x).length);
+Use cases:
+- Input/Output formatting, making sure data getting saved int the database is the right type/ format.
+- Changing data type for comparison, or to apply type-specific methods on the value.
