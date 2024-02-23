@@ -1,0 +1,10 @@
+What is the difference between CSS Grid and Flexbox layouts?
+flexbox:
+- either row or column (one dimension)
+- flex can extend to another row when flex items fill the row, flexbox lines things up in one direction
+- can not overlap items
+- ideal for laying out items in ways that they can dynamically resize
+CSS grid:
+- row and column (two dimensions)
+- can overlap items
+- provides more alignment which is why it's ideal for overall page layout
