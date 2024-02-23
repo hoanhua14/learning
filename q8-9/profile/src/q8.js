@@ -2,10 +2,14 @@
 
 import React from 'react';
 const Profile = ({name, age}) => {
+    const reverseName = (name) => {
+        return name.split('').reverse().join('');
+    };
 
     return (
         <>
-            <div>Output: {name}{age}</div>
+            <div>Name: {name} Age: {age}</div>
+            <h1>{reverseName(name)}</h1>
         </>
     )
 }
