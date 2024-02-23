@@ -1,0 +1,2 @@
+How do you handle asynchronous operations in javascript, such as sending a request to an API?
+Async operations in JavaScript can be handled by using callback function, promises, and async/await. Callback function is passed into the initial function as an argument and will be invoked later. Async function always returns a promise or either fulfilled (giving a return value and we decide what to do with that value using .then) or rejected (throwing errors .catch) . In async/await functions, execution is suspended until the promise is resolved.
